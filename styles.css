@@ -1,0 +1,59 @@
+body {
+    background-color: pink;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+h1 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.gif-container {
+    position: relative;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    animation: gifAnimation 5s infinite; /* Adjust the duration as needed */
+}
+
+@keyframes gifAnimation {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(10px); /* Adjust the distance and animation properties as needed */
+    }
+}
+
+.response-buttons {
+    position: absolute;
+    bottom: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
